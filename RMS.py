@@ -9,7 +9,10 @@ Root Mean Square with For and While
 
 import numpy as np
 from numpy import sqrt
-x = [1,2,3,4,5,6,7,8,9,10]
+
+x = eval(input("Enter Array: \n"))
+Tol = eval(input("Enter Tolerance: \n"))
+
 def rms(x):
     index = 0
     sigma = 0
@@ -19,6 +22,7 @@ def rms(x):
         index += 1    
     rms = sqrt(sigma/len(x))
     return rms
+
 def frms(x):
     sigma = 0
     for i in x:
@@ -26,7 +30,7 @@ def frms(x):
         sigma = acc + sigma
     rms = sqrt(sigma/len(x))
     return rms
-Tol = 0.0001
+
 print('While RMS value', rms(x))
 print('For RMS value', frms(x))
 Calc = abs(rms(x)-frms(x))
