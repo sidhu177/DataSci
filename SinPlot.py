@@ -15,5 +15,5 @@ y = np.sin(x)/x
 y2 = np.sin(2*x)/x
 y3 = np.sin(3*x)/x
 pl.plot(x,y,'k--', linewidth=3)
-pl.plot(x,y2,'m-.')
+pl.plot(x,y2,'m-.',linewidth=2)
 pl.plot(x,y3,color='#87a3cc',linestyle='-')
