@@ -2,6 +2,8 @@
 """
 Created on Thu Jun 14 22:16:49 2018
 
+Taken From Web Scraping, O'Rielly
+
 @author: SIDHARTH
 """
 
