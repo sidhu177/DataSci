@@ -21,7 +21,7 @@ header = data[0]
 values = array(data[2:])
 yearday = zeros(len(values[:,0]))
 for i, day in enumerate(values[:,0]):
-    market_close_time = (int(day[6:]),int(day[:2]),int(day[3:5]),16,0,0,0,0,0)
+    market_close_time = (float(day[6:]),float(day[:2]),float(day[3:5]),16,0,0,0,0,0)
     yearday[i] = gmtime(mktime(market_close_time)).tm_yday
     
 for i in range(1,5):
