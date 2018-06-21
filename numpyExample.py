@@ -2,6 +2,8 @@
 """
 Created on Wed Jun 20 20:53:44 2018
 
+Taken From Mastering Scientific Computing using Python, Hemant Mehta, Packt, 2015
+
 @author: SIDHARTH
 """
 
