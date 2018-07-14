@@ -60,6 +60,6 @@ chmod 777 *
 
 chcon -R -t httpd_sys_content_rw_t /var/www/html/sites/
 
-
+SELinux could cause a problem in EC2 to RDS connection, if the commandline connection to RDS succeeds and the GUI web to Database connection fails, then the reason is most likely to be SELinux. The way to avoid this is to set SELinux to permissive as opposed to enforcing-which is the default. you will find SELinux hosts file in /etc/SELinux.
 
 
