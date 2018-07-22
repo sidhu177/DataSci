@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This program is to encrypt passwords
+This program is to encrypt passwords written in python
 """
 import base64
 print("Welcome to the Encrypt Decrypt utility")

@@ -2,7 +2,7 @@
 """
 Created on Tue Dec 26 19:55:08 2017
 
-Root Mean Square with For and While
+Root Mean Square program with For and While
 
 @author: SIDHARTH
 """
