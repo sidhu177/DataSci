@@ -10,3 +10,5 @@ Now, where can lambda be used. One example of using Lambda is in ETL. A common a
 The new way of doing the routine would be to set a trigger for the moment new data is stored in S3 , the trigger launches the code deployed in a Lambda function that connects to S3 and redshift and transforms and loads data into the target tables. The advantage: Cost. With Lambda one does not have to deal with EC2 instance costs and maintenances. 
 
 Lambda is pretty inexpensive, while you will get billed for a minimum of 100ms regardless of the actual runtime. The cost for running a Lambda function is low enough to make economic sense for the industry to explore and exploit the serverless option.
+
+<a href="https://openwhisk.apache.org/">Apache openwhisk</a>  is an open source example of the serverless application of which AWS lambda is an example.
