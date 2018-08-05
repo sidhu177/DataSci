@@ -11,4 +11,4 @@ The new way of doing the routine would be to set a trigger for the moment new da
 
 Lambda is pretty inexpensive, while you will get billed for a minimum of 100ms regardless of the actual runtime. The cost for running a Lambda function is low enough to make economic sense for the industry to explore and exploit the serverless option.
 
-<a href="https://openwhisk.apache.org/">Apache openwhisk</a>  is an open source example of the serverless application of which AWS lambda is an example.
+<a href="https://openwhisk.apache.org/" target="_blank">Apache openwhisk</a>  is an open source example of the serverless application of which AWS lambda is an example.
