@@ -12,3 +12,9 @@ The new way of doing the routine would be to set a trigger for the moment new da
 Lambda is pretty inexpensive, while you will get billed for a minimum of 100ms regardless of the actual runtime. The cost for running a Lambda function is low enough to make economic sense for the industry to explore and exploit the serverless option.
 
 [Apache openwhisk](https://openwhisk.apache.org/)   is an open source example of the serverless application of which AWS lambda is an example.
+
+The main function with Lambda in python looks like this
+def handler(event,context):
+    return "What's Up!"
+
+When running lambda you will need the name of the python file and the name of the function that you want to call defined in the console. 
