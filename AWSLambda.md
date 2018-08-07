@@ -12,3 +12,26 @@ The new way of doing the routine would be to set a trigger for the moment new da
 Lambda is pretty inexpensive, while you will get billed for a minimum of 100ms regardless of the actual runtime. The cost for running a Lambda function is low enough to make economic sense for the industry to explore and exploit the serverless option.
 
 <a href="https://openwhisk.apache.org/" target="_blank">Apache openwhisk</a>  is an open source example of the serverless application of which AWS lambda is an example.
+
+
+- [Awesome Big Data](#awesome-bigdata)
+    - [RDBMS](#rdbms)
+    - [Frameworks](#frameworks)
+    - [Distributed Programming](#distributed-programming)
+    - [Distributed Filesystem](#distributed-filesystem)
+    - [Key-Map Data Model](#key-map-data-model)
+    - [Document Data Model](#document-data-model)
+    - [Key-value Data Model](#key-value-data-model)
+
+## RDBMS
+* [MySQL](https://www.mysql.com/) The world's most popular open source database.
+* [PostgreSQL](https://www.postgresql.org/) The world's most advanced open source database.
+* [Oracle Database](http://www.oracle.com/us/corporate/features/database-12c/index.html) - object-relational database management system.
+* [Teradata](http://www.teradata.com/products-and-services/teradata-database/) - high-performance MPP data warehouse platform.
+
+## Frameworks
+
+* [IBM Streams](https://www.ibm.com/analytics/us/en/technology/stream-computing/) - platform for distributed processing and real-time analytics.  Integrates with many of the popular technologies in the Big Data ecosystem (Kafka, HDFS, Spark, etc.)
+* [Apache Hadoop](http://hadoop.apache.org/) - framework for distributed processing. Integrates MapReduce (parallel processing), YARN (job scheduling) and HDFS (distributed file system).
+* [Tigon](https://github.com/caskdata/tigon) - High Throughput Real-time Stream Processing Framework.
+* [Pachyderm](http://pachyderm.io/) - Pachyderm is a data storage platform built on Docker and Kubernetes to provide reproducible data processing and analysis.
