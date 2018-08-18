@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Aug 15 22:17:59 2018
+Created on Sat Aug 18 16:13:44 2018
 
 @author: SIDHARTH
 """
 
 class LinkedStack:
     class _Node:
-        __slots__='_element','_next'
+        __slots__ = '_element','_next'
         
-    def __init__(self,element, next):
-        self._element = element
-        self._next = next
-    
+        def __init__(self,element, next):
+            self._element = element
+            self._next = next
+            
     def __init__(self):
         self._head = None
         self._size = 0
@@ -20,11 +20,8 @@ class LinkedStack:
     def __len__(self):
         return self._size
         
-    def is_empty(self):
-        return self._self == 0
-        
-    def push(self,e):
-        self._head = self._Node(e, self._head)
+    def push(self, e):
+        self._head = self._Node(e,self._head)
         self._size +=1
         
     def top(self):
