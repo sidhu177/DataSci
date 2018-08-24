@@ -1,2 +1,2 @@
-# Test Repo using python
-Test Programs Related to Data Science and numerical methods also some test programs
+# Code snippets and examples in python
+This repo is a collection of programming in Python demonstrating examples in Data Structures, Algorithms, Automation and some Numerical methods. 
