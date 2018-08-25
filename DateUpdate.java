@@ -1,4 +1,4 @@
-import java.time.LocalDate;
+import java.time.LocalDate;                                   //importing Java Libraries
 import java.time.temporal.TemporalAdjusters;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -20,20 +20,20 @@ public class DateUpdate                                       // Beginning the C
     	 
       }
 
-	private static String convertReportingPeriods(String reportingPeriodEnding)   
+	private static String convertReportingPeriods(String reportingPeriodEnding)     //class to format the input 
 	{
-			String month = reportingPeriodEnding.split("-")[0];
-			String year = reportingPeriodEnding.split("-")[1];
-			LocalDate lastDayofMonthGivenDate = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), 1).with(TemporalAdjusters.lastDayOfMonth());
-			return lastDayofMonthGivenDate.getDayOfMonth() + "-" + month + "-" + year;
+			String month = reportingPeriodEnding.split("-")[0];                     //Storing the month value from the input
+			String year = reportingPeriodEnding.split("-")[1];                      //Storing the year  value from the input
+			LocalDate lastDayofMonthGivenDate = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), 1).with(TemporalAdjusters.lastDayOfMonth());   //using a Java extention to extract the last day of the month 
+			return lastDayofMonthGivenDate.getDayOfMonth() + "-" + month + "-" + year;   //Returning the properly formatted date
 	}
 
-	private static List<String> getDummyInput() 
+	private static List<String> getDummyInput()                 //Class to store input dates
 	{
-		  List<String> reportingPeriodEnding = new ArrayList<>();
+		  List<String> reportingPeriodEnding = new ArrayList<>();       //creating a List of Strings which will hold the input dates
 		  reportingPeriodEnding.add("10-2016");
 		  reportingPeriodEnding.add("11-2016");
 		  reportingPeriodEnding.add("02-2016");
-		  return reportingPeriodEnding;
+		  return reportingPeriodEnding;                         //returning the list
 	}
 }                                                                            
