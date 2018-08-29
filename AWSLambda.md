@@ -1,20 +1,25 @@
 # AWS Lambda
-## Things to know about Lambda
-
-AWS Lambda is an event driven purely compute resource that allows users to deploy code directly and not worry about infrastructure maintenance. Think of it as pushing just the python script as opposed to instantiating the EC2 and updating the OS, maintaining security patches, installing the language with dependant libraries and then running your code. Lambda does away with all of that. Just Fire and Forget.
+## Intro to AWS Lambda
+In this talk we will be going through feature and functions of AWS Lambda. We will be looking at how to get started , the use cases and some examples using Python 3.5 programming language.
 
 ## Goals of this Talk
 1) Get to Know Lambda
 2) Go through the Console
 3) Know the the limitations
 4) Look at some examples.
+
 So by the end of the talk the take away would be that you know what and where to use Lambda and are able to write small functions to test and play with lambda.
+
+## Lambda 101
+AWS Lambda is an event driven purely compute resource that allows users to deploy code directly and not worry about infrastructure maintenance. Think of it as pushing just the python script as opposed to instantiating the EC2 and updating the OS, maintaining security patches, installing the language with dependant libraries and then running your code. Lambda does away with all of that. Just Fire and Forget.
 
 You can find the Lambda service in the Compute section of the list of services in AWS console.
 
 Lambda is pretty inexpensive, while you will get billed for a minimum of 100ms regardless of the actual runtime. The cost for running a Lambda function is low enough to make economic sense for the industry to explore and exploit the serverless option.
 
 [Apache openwhisk](https://openwhisk.apache.org/)   is an open source example of the serverless application of which AWS lambda is an example.
+
+## Example 1
 
 The main function with Lambda in python looks like this
 <pre class="devsite-terminal devsite-click-to-copy">
