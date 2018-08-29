@@ -15,12 +15,17 @@ AWS Lambda is an event driven purely compute resource that allows users to deplo
 
 You can find the Lambda service in the Compute section of the list of services in AWS console.
 
-Lambda is pretty inexpensive, while you will get billed for a minimum of 100ms regardless of the actual runtime. The cost for running a Lambda function is low enough to make economic sense for the industry to explore and exploit the serverless option.
+Lambda is pretty inexpensive, while you will get billed for a minimum of 100ms regardless of the actual runtime, you are only getting billed for the use time and not anything else. When comparing that with the traditional cost of running a piece of code on ec2, lambda fares well. The cost for running a Lambda function is low enough to make economic sense for the industry to explore and exploit the serverless option.
 
-[Apache openwhisk](https://openwhisk.apache.org/)   is an open source example of the serverless application of which AWS lambda is an example.
+[Apache openwhisk](https://openwhisk.apache.org/)   is an open source example of the serverless application.
+
+## Dashboard 
+In this talk we will be using the Dahsboard to launch the Lambda function
+
+## Event Trigger
+One of the many advantages of Lambda is ease of wiring it with services like Cloudwatch, S3 and others which serve as the input for the function. So we are essentially putting lego pieces together. 
 
 ## Example 1
-
 The main function with Lambda in python looks like this
 <pre class="devsite-terminal devsite-click-to-copy">
 def handler(event,context):
