@@ -25,9 +25,9 @@ When running lambda you will need the name of the python file and the name of th
 
 By default, Lambda is going to log any function you run. You can customize the log if you need more details.
 
-##ServerLess Concepts
+## ServerLess Concepts
 
-##Limitations
+## Limitations
 1) Its important to note that AWS Lambda is not for managing underlying resources.
 2) Retries happen when functions fail. Functions fail if it maxes out on provided time or if the input is wrong or unparseble and other contraints
 3) scope of the functions should be self contained and stateless
