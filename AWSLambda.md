@@ -14,10 +14,13 @@ Lambda is pretty inexpensive, while you will get billed for a minimum of 100ms r
 [Apache openwhisk](https://openwhisk.apache.org/)   is an open source example of the serverless application of which AWS lambda is an example.
 
 The main function with Lambda in python looks like this
-'def handler(event,context):'
-    'return "What's Up!"'
+<pre class="devsite-terminal devsite-click-to-copy">
+def handler(event,context):
+    return "What's Up!"
+</pre>
 
-Here handler is the name of the function, event and context are the default parameters passed to the function with return being the output
+
+Here *handler* is the name of the function, event and context are the default parameters passed to the function with return being the output
 
 When running lambda you will need the name of the python file and the name of the function that you want to call defined in the console. 
 
