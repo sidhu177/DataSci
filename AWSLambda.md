@@ -7,7 +7,7 @@ AWS Lambda is an event driven purely compute resource that allows users to deplo
 1) Get to Know Lambda
 2) Go through the Console
 3) Know the the limitations
-4) Look at some examples
+4) Look at some examples.
 So by the end of the talk the take away would be that you know what and where to use Lambda and are able to write small functions to test and play with lambda.
 
 You can find the Lambda service in the Compute section of the list of services in AWS console.
