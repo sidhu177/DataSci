@@ -1,7 +1,7 @@
 # AWS Lambda
 ## Things to know about Lambda
 
-AWS Lambda is a purely compute resource that allows users to deploy code directly and not worry about infrastructure maintenance. Think of it as pushing just the python script as opposed to instantiating the EC2 and updating the OS, maintaining security patches, installing the language with dependant libraries and then running your code. Lambda does away with all of that. Just Fire and Forget.
+AWS Lambda is an event driven purely compute resource that allows users to deploy code directly and not worry about infrastructure maintenance. Think of it as pushing just the python script as opposed to instantiating the EC2 and updating the OS, maintaining security patches, installing the language with dependant libraries and then running your code. Lambda does away with all of that. Just Fire and Forget.
 
 You can find the Lambda service in the Compute section of the list of services in AWS console.
 
@@ -18,3 +18,5 @@ def handler(event,context):
     return "What's Up!"
 
 When running lambda you will need the name of the python file and the name of the function that you want to call defined in the console. 
+
+Its not for managing underlying resources.
