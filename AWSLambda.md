@@ -19,11 +19,16 @@ def handler(event,context):
     return "What's Up!"
 </pre>
 
-
 Here *handler* is the name of the function, event and context are the default parameters passed to the function with return being the output
 
 When running lambda you will need the name of the python file and the name of the function that you want to call defined in the console. 
 
-Its not for managing underlying resources.
-
 By default, Lambda is going to log any function you run. You can customize the log if you need more details.
+
+##ServerLess Concepts
+
+##Limitations
+1) Its important to note that AWS Lambda is not for managing underlying resources.
+2) Retries happen when functions fail. Functions fail if it maxes out on provided time or if the input is wrong or unparseble and other contraints
+3) scope of the functions should be self contained and stateless
+
