@@ -38,3 +38,37 @@ class LinkedBinaryTree(BinaryTree):
         
     def _make_position(self,node):
         return self.Position(self,node) if node is not None else None
+        
+    def __init__(self):
+        self._root = None
+        self._size = 0
+        
+    def __len__(self):
+        return self._size
+        
+    def root(self):
+        return self._make_position(self.root)
+        
+    def parent(self,p):
+        node = self._validate(p)
+        return self._make_position(node._parent)
+        
+    def left(self,p):
+        node = self._validate(p)
+        return self._make_position(node._left)
+        
+    def right(self,p):
+        node = self._validate(p)
+        return self._make_position(node._right)
+        
+    def num_children(self,p):
+        node = self._validate(p)
+        count = 0
+        if node._left is not None:
+            count += 1
+        if node._right is not None:
+            count += 1 
+        return count
+        
+        
+        
