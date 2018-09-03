@@ -2,7 +2,7 @@
 """
 Created on Tue Aug 28 22:25:06 2018
 
-Taken from Data structures and algorithms using Python
+Taken from Data structures and algorithms in Python by M.T.Goodrich et al
 
 @author: SIDHARTH
 """
@@ -69,6 +69,36 @@ class LinkedBinaryTree(BinaryTree):
         if node._right is not None:
             count += 1 
         return count
+		
+	def _add_root(self,e):
+	    if self._root is not None: 
+		   raise ValueError('Root exists')
+		self._size = 1
+		self._root = self._Node(e)
+		return self._make_position(self.root)
+		
+	def _add_left(self,p,e):
+	    node = self._validate(p)
+		if node._left is not None:
+		   raise ValueError('Left child exists')
+		self._size += 1
+		node._left = self._Node(e, node)
+		return self._make_position(node._left)
+		
+	def _add_right(self,p,e):
+	    node = self._validate(p)
+		if node._right is not None: raise ValueError('Right Child Exists')
+		self._size += 1
+		node._right = self._Node(e,node)
+		return self._make_position(node._right)
+		
+	def _replace(self,p,e):
+	    node = self._validate(p)
+		old = node._element
+		node._element = e
+		return old
+		
+	
         
         
         
