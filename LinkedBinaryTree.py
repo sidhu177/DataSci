@@ -99,6 +99,45 @@ class LinkedBinaryTree(BinaryTree):
 		return old
 		
 	
-        
+    def _delete(self,p):
+	    node = self._validate(p)
+		if self.num_children(p) == 2:raise ValueError('p has to children')
+		child = node._left if node._left else node._right
+		if child is not None:
+		   child._parent = node.parent
+		if node is self._root:
+		   self._root = child
+		else:
+		   parent = node._parent
+		   if node is parent._left:
+		      parent._left = child
+		   else:
+		      parent._right = child
+		self._size -= 1
+		node._parent = node
+		return node._element
+		
+	def _attach(self,p,t1,t2):
+	    node = self._validate(p)
+		if not self.is_leaf(p): raise ValueError('position must be leaf')
+		if not type(self) is type(t1) is type(t2):
+		   raise TypeError('Tree Types must match')
+		self.size += len(t1)+len(t2)
+		if not t1.is_empty():
+		   t1._root._parent = node
+		   node._left = t1._root
+		   t1._root = None
+		   t1._size = 0
+		if not t2.is_empty():
+		   t2._root._parent = node
+		   node._right = t2.root
+		   t2._root = None
+		   t2._size = 0
+		   
+		
+		
+		
+			
+	
         
         
