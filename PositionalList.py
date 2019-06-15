@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Aug 21 21:45:07 2018
-
-@author: SIDHARTH
 """
 
 class PositionialList(_DoublyLinkedBase):
