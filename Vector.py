@@ -3,8 +3,6 @@
 Created on Sat Aug  4 11:57:17 2018
 
 Taken from Data structures and Algorithms using Python by T.Goodrich et al
-
-@author: SIDHARTH
 """
 
 class Vector:
