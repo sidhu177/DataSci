@@ -3,8 +3,6 @@
 Created on Mon Jun 11 23:47:16 2018
 
 Taken from Numerical Methods in Engineering, Cambridge, 2013, Jaan Kiusalaas
-
-@author: SIDHARTH
 """
 
 import numpy as np
