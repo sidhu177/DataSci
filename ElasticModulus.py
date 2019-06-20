@@ -3,8 +3,6 @@
 Created on Mon Jun 18 19:56:36 2018
 
 Given Force, length, width and cross-sectional area and ellongation calculates Young's Modulus
-
-@author: SIDHARTH
 """
 
 f = eval(input('Input Force in Newtons\n'))
