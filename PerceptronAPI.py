@@ -3,8 +3,6 @@
 Created on Wed Jun 13 22:57:36 2018
 
 Taken From Python Machine Learning, Sebastian Raschka and Vahid Mirjalili, 2017, Pakt publishing
-
-@author: SIDHARTH
 """
 
 import numpy as np
