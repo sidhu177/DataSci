@@ -3,8 +3,6 @@
 Created on Tue Jun 12 22:06:40 2018
 
 Taken From Automate the boring Stuff using Python, By Al Sweigart, No Starch Press, 2014 
-
-@author: SIDHARTH
 """
 
 import os
