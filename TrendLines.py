@@ -3,8 +3,6 @@
 Created on Tue Jun 19 22:24:07 2018
 
 Taken from Beginning Python Visualization by Shai Vaingast, Apress Publishing
-
-@author: SIDHARTH
 """
 
 from pylab import *
