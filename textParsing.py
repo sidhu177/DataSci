@@ -3,8 +3,6 @@
 Created on Fri Jun  8 23:31:53 2018
 
 parsing Text File Taken from "Beginning Python Visualization by Shai Vaingast, Apress"
-
-@author: SIDHARTH
 """
 
 def srchfile(filename,substr):
