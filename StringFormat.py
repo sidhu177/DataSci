@@ -3,8 +3,6 @@
 Created on Sat Jun 16 11:28:33 2018
 
 Taken From Python 3 Object Oriented Programming, Dusty Phillips, Packt Publishing,2015
-
-@author: SIDHARTH
 """
 
 def format_string(string,formatter=None):
